@@ -43,7 +43,13 @@ function App() {
     fetchData();
   }, []);
 
-  
+  useEffect(() => {
+    if (cartOpened) {
+      document.body.style.overflow = "hidden"      
+    } else {
+      document.body.style.overflow = "initial"   
+    }
+  }, [cartOpened])
 
   const onAddToCart = async (obj) => {
     try {
