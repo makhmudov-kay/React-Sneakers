@@ -3,8 +3,8 @@ import Card from "../components/Card";
 import {AppContext} from '../App'
 
 
-const Favorites = ({ onAddToCart, onAddToFavorites}) => {
-  const {favorites} = React.useContext(AppContext)
+const Favorites = () => {
+  const {favorites, onAddToCart, onAddToFavorites} = React.useContext(AppContext)
   return (
     <div className="content p-40">
       <div className="mb-40 d-flex align-center justify-between">

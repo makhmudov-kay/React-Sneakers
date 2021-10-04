@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/Card";
 
-const Home = ({ searchValue, setSearchValue, onChangeSearch, items, onAddToCart, onAddToFavorites, cartItems, isLoading}) => {
+const Home = ({ searchValue, setSearchValue, onChangeSearch, items, onAddToCart, onAddToFavorites, isLoading}) => {
 
   const renderItems = () => {
     const filteredItems = items.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()))

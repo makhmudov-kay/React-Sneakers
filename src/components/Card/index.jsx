@@ -15,15 +15,17 @@ const Card = ({
 }) => {
   const {isAddedItems} = React.useContext(AppContext)
   const [isFavorite, setIsFavorite] = React.useState(favorited);
+  const obj = { id, parentId: id, title, price, imageUrl }
 
   const onClickPlus = () => {
-    onPlus({ id, title, price, imageUrl });
+    onPlus(obj);
   };
 
   const onChangeFavorite = () => {
-    onFavorite({ id, title, price, imageUrl });
+    onFavorite(obj);
     setIsFavorite(!isFavorite);
   };
+  
 
   return (
     <div className={styles.card}>
@@ -43,9 +45,9 @@ const Card = ({
         </ContentLoader>
       ) : (
         <>
-          <div className={styles.favorite} onClick={onChangeFavorite}>
+          {onFavorite && <div className={styles.favorite} onClick={onChangeFavorite}>
             <img src={isFavorite ? "/img/heart-liked.svg" : "/img/heart-unliked.svg"} alt="Unliked"/>
-          </div>
+          </div>}          
           <img width="100%" height={135} src={imageUrl} alt="sneakers" />
           <h5>{title}</h5>
           <div className="d-flex justify-between align-center">
@@ -53,12 +55,13 @@ const Card = ({
               <span>Цена:</span>
               <b>{price}</b>
             </div>
-            <img
+            {onPlus && <img
               className={styles.plus}
               onClick={onClickPlus}
               src={isAddedItems(id) ? "/img/btn-checked.svg" : "/img/btn-plus.svg"}
               alt="Plus"
-            />
+            />}
+            
           </div>
         </>
       )}
