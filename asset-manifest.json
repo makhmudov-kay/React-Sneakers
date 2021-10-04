@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/React-Sneakers/static/css/main.e43ac6b4.chunk.css",
-    "main.js": "/React-Sneakers/static/js/main.fd156d52.chunk.js",
-    "main.js.map": "/React-Sneakers/static/js/main.fd156d52.chunk.js.map",
-    "runtime-main.js": "/React-Sneakers/static/js/runtime-main.8db047c1.js",
-    "runtime-main.js.map": "/React-Sneakers/static/js/runtime-main.8db047c1.js.map",
-    "static/css/2.1cdcfe91.chunk.css": "/React-Sneakers/static/css/2.1cdcfe91.chunk.css",
-    "static/js/2.6f248c96.chunk.js": "/React-Sneakers/static/js/2.6f248c96.chunk.js",
-    "static/js/2.6f248c96.chunk.js.map": "/React-Sneakers/static/js/2.6f248c96.chunk.js.map",
-    "index.html": "/React-Sneakers/index.html",
-    "static/css/2.1cdcfe91.chunk.css.map": "/React-Sneakers/static/css/2.1cdcfe91.chunk.css.map",
-    "static/css/main.e43ac6b4.chunk.css.map": "/React-Sneakers/static/css/main.e43ac6b4.chunk.css.map",
-    "static/js/2.6f248c96.chunk.js.LICENSE.txt": "/React-Sneakers/static/js/2.6f248c96.chunk.js.LICENSE.txt"
+    "main.css": "https://makhmudov-kay.github.io/React-Sneakers/static/css/main.e43ac6b4.chunk.css",
+    "main.js": "https://makhmudov-kay.github.io/React-Sneakers/static/js/main.833585a1.chunk.js",
+    "main.js.map": "https://makhmudov-kay.github.io/React-Sneakers/static/js/main.833585a1.chunk.js.map",
+    "runtime-main.js": "https://makhmudov-kay.github.io/React-Sneakers/static/js/runtime-main.9d6a5997.js",
+    "runtime-main.js.map": "https://makhmudov-kay.github.io/React-Sneakers/static/js/runtime-main.9d6a5997.js.map",
+    "static/css/2.1cdcfe91.chunk.css": "https://makhmudov-kay.github.io/React-Sneakers/static/css/2.1cdcfe91.chunk.css",
+    "static/js/2.6f248c96.chunk.js": "https://makhmudov-kay.github.io/React-Sneakers/static/js/2.6f248c96.chunk.js",
+    "static/js/2.6f248c96.chunk.js.map": "https://makhmudov-kay.github.io/React-Sneakers/static/js/2.6f248c96.chunk.js.map",
+    "index.html": "https://makhmudov-kay.github.io/React-Sneakers/index.html",
+    "static/css/2.1cdcfe91.chunk.css.map": "https://makhmudov-kay.github.io/React-Sneakers/static/css/2.1cdcfe91.chunk.css.map",
+    "static/css/main.e43ac6b4.chunk.css.map": "https://makhmudov-kay.github.io/React-Sneakers/static/css/main.e43ac6b4.chunk.css.map",
+    "static/js/2.6f248c96.chunk.js.LICENSE.txt": "https://makhmudov-kay.github.io/React-Sneakers/static/js/2.6f248c96.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8db047c1.js",
+    "static/js/runtime-main.9d6a5997.js",
     "static/css/2.1cdcfe91.chunk.css",
     "static/js/2.6f248c96.chunk.js",
     "static/css/main.e43ac6b4.chunk.css",
-    "static/js/main.fd156d52.chunk.js"
+    "static/js/main.833585a1.chunk.js"
   ]
 }
