@@ -43,6 +43,8 @@ function App() {
     fetchData();
   }, []);
 
+  
+
   const onAddToCart = async (obj) => {
     try {
       const findItem = cartItems.find((item) => Number(item.parentId) === Number(obj.id))
@@ -111,11 +113,11 @@ function App() {
 
   const isAddedItems = (id) => {
     return cartItems.some((obj) => Number(obj.parentId) === Number(id));
-  };  
+  };   
 
   return (
     <AppContext.Provider value={{ items, cartItems, favorites, isAddedItems, setCartOpened, setCartItems, onAddToCart, onAddToFavorites }}>
-      <div className="wrapper clear">
+      <div className= "wrapper clear">
         <Drawer
             items={cartItems}
             onClose={() => setCartOpened(false)}

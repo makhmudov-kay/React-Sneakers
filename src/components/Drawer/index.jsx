@@ -11,8 +11,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
   const {cartItems, setCartItems, totalPrice} = useCart()  
   const [orderId, setOrderId] = React.useState(null)
   const [isOrderCompleted, setIsOrederCompleted] = React.useState(false);
-  const [isLoading, setIsLoading] = React.useState(false)
-  
+  const [isLoading, setIsLoading] = React.useState(false)  
 
   const onClickOrder = async () => {
     try {
@@ -45,7 +44,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
           <img
             onClick={onClose}
             className="cu-p"
-            src="/img/btn-remove.svg"
+            src="img/btn-remove.svg"
             alt="Remove"
           />
         </h2>
@@ -69,7 +68,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
                   <img
                     onClick={() => onRemove(item.id)}
                     className={styles.removeBtn}
-                    src="/img/btn-remove.svg"
+                    src="img/btn-remove.svg"
                     alt="Remove"
                   />
                 </div>
@@ -89,7 +88,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
                 </li>
               </ul>
               <button disabled={isLoading} onClick={onClickOrder} className="greenButton">
-                Оформить заказ <img src="/img/arrow.svg" alt="Arrow" />
+                Оформить заказ <img src="img/arrow.svg" alt="Arrow" />
               </button>
             </div>
           </div>
@@ -97,7 +96,7 @@ const Drawer = ({ onClose, onRemove, items = [], opened }) => {
           <Info
             title={isOrderCompleted ? "Заказ оформлен!" : "Корзина пустая"}
             description={isOrderCompleted ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : "Добавьте хотя бы одну пару кроссовок, чтобы сделать заказ."}
-            image={isOrderCompleted ? "./img/complete.jpg" :"/img/empty.png"}
+            image={isOrderCompleted ? "img/complete.jpg" :"img/empty.png"}
           />
         )}
       </div>
